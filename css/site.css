@@ -1,0 +1,152 @@
+   .header-background {
+       background: url('../images/biriyani.jpg') center / cover;
+       height: 400px;
+   }
+   .demo-layout-transparent .mdl-layout__header {
+       color: white;
+   }
+   .style_name {
+       margin-top: 15%;
+       font-size: 100px;
+       letter-spacing: -7px;
+       font-family: 'Gabriela', serif;
+   }
+   .styleTagline {
+       margin-top: 16%;
+       font-size: 25px;
+       font-style: italic;
+   }
+   /* Desktop */
+   
+   @media only screen and (min-width: 1025px) {
+       .hide_desktop {
+           display: none!important;
+       }
+   }
+   /* Tablet */
+   
+   @media only screen and (min-width: 768px) and (max-width: 1024px) {
+       .header-background {
+           background: url('../images/biriyani-mobile.jpg') center / cover;
+           height: 400px;
+       }
+       .hide_tablet {
+           display: none!important;
+       }
+       .style_name {
+           margin-top: 25%;
+           font-size: 50px;
+           letter-spacing: -7px;
+           font-family: 'Gabriela', serif;
+       }
+       .styleTagline {
+           margin-top: 30%;
+           font-size: 25px;
+           font-style: italic;
+       }
+       .mdl-mega-footer {
+           margin-top: 50px;
+       }
+   }
+   /* Phablets */
+   
+   @media only screen and (min-width: 580px) and (max-width: 767px) {
+       .header-background {
+           background: url('../images/biriyani-mobile.jpg') center / cover;
+           height: 400px;
+       }
+       .hide_mobile {
+           display: none!important;
+       }
+       .style_name {
+           margin-top: 25%;
+           font-size: 50px;
+           letter-spacing: -7px;
+           font-family: 'Gabriela', serif;
+       }
+       .styleTagline {
+           font-size: 15px;
+           font-style: italic;
+           width: 180px;
+           text-align: center;
+           margin-top: 18px;
+       }
+       .hero_title {
+           padding-left: 0px;
+       }
+
+         .text_margin{
+          margin-top: 25%;
+        }
+   }
+   /* Mobile */
+   
+   @media only screen and (min-width: 381px) and (max-width: 579px) {
+       .header-background {
+           background: url('../images/biriyani-mobile.jpg') center / cover;
+           height: 400px;
+       }
+       .hide_mobile {
+           display: none!important;
+       }
+       .style_name {
+           margin-top: 55%;
+           font-size: 50px;
+           letter-spacing: -7px;
+           font-family: 'Gabriela', serif;
+           width: 90%;
+           text-align: center;
+           line-height: 40px;
+       }
+
+
+       .styleTagline {
+           font-size: 15px;
+           font-style: italic;
+           width: 180px;
+           text-align: center;
+           margin-top: 18px;
+       }
+       .hero_title {
+           padding-left: 0px;
+       }
+
+         .text_margin{
+          margin-top: 25%;
+        }
+   }
+   /* Small Mobile Screens */
+   
+   @media only screen and (min-width: 280px) and (max-width: 380px) {
+       .header-background {
+           background: url('../images/biriyani-mobile.jpg') center / cover;
+           height: 400px;
+       }
+       .hide_mobile {
+           display: none!important;
+       }
+       .style_name {
+           margin-top: 55%;
+           font-size: 50px;
+           letter-spacing: -7px;
+           font-family: 'Gabriela', serif;
+           width: 90%;
+           text-align: center;
+           line-height: 40px;
+           padding-left: 50px;
+       }
+       .styleTagline {
+           font-size: 15px;
+           font-style: italic;
+           width: 180px;
+           text-align: center;
+           margin-top: 18px;
+       }
+       .hero_title {
+           padding-left: 0px;
+       }
+
+         .text_margin{
+          margin-top: 25%;
+        }
+   }
