@@ -2,36 +2,35 @@
        background: url('../images/biriyani.jpg') center / cover;
        height: 400px;
    }
-
    .mainContent {
        background: white;
    }
-
    ul {
-    width: 70%;
-    margin: auto;
-    list-style-type: none;
-}
-
-    .learn_title{
-      font-size: 40px;
-      padding-top:60px;
-      padding-bottom: 60px;
-      font-family: 'Gabriela', serif;
-      display: inline-block;
-      text-align: center;
-      width: 100%;
-    }
-
-     .learn_intro{
-      font-size: 20px;
-      width: 90%;
-      text-align: justify;
-      line-height: 40px;
-      font-family: Source Sans Pro;
-      padding-bottom: 60px;
-    }
-
+       width: 70%;
+       margin: auto;
+       list-style-type: none;
+       padding: 0px;
+   }
+   #locationDetails {
+       display: block;
+   }
+   .learn_title {
+       font-size: 40px;
+       padding-top: 60px;
+       padding-bottom: 60px;
+       font-family: 'Gabriela', serif;
+       display: inline-block;
+       text-align: center;
+       width: 100%;
+   }
+   .learn_intro {
+       font-size: 20px;
+       width: 90%;
+       text-align: justify;
+       line-height: 40px;
+       font-family: Source Sans Pro;
+       padding-bottom: 60px;
+   }
    .demo-layout-transparent .mdl-layout__header {
        color: white;
    }
@@ -46,45 +45,36 @@
        font-size: 25px;
        font-style: italic;
    }
-
    .locationSelect {
        margin-top: 15%;
-    
-    margin: auto;
-    text-align:centre;
+       margin: auto;
+       text-align: centre;
+   }
+   .locationArea >div {
+       text-align: center;
+       vertical-align: middle;
    }
 
-     .locationArea >div{
-         text-align: center;
-vertical-align: middle;
-       }
-
-
-
    /* Desktop */
-   
    @media only screen and (min-width: 1025px) {
        .hide_desktop {
            display: none!important;
        }
-
        .locationArea {
            width: 100%;
            display: inline-block;
        }
-
        #location {
            width: 50%;
            float: right;
        }
-
-        #menu {
+       #menu {
            width: 50%;
            float: left;
        }
    }
+
    /* Tablet */
-   
    @media only screen and (min-width: 768px) and (max-width: 1024px) {
        .header-background {
            background: url('../images/biriyani-mobile.jpg') center / cover;
@@ -107,21 +97,19 @@ vertical-align: middle;
        .mdl-mega-footer {
            margin-top: 50px;
        }
-
-         .learn_title {
-        width: 100%;
-      }
-
-         .learn_intro {
-          font-size: 20px;
-          font-family: Source Sans Pro;
-          width: 90%;
-          text-align: justify;
-          line-height: 40px;
-      }
+       .learn_title {
+           width: 100%;
+       }
+       .learn_intro {
+           font-size: 20px;
+           font-family: Source Sans Pro;
+           width: 90%;
+           text-align: justify;
+           line-height: 40px;
+       }
    }
+
    /* Phablets */
-   
    @media only screen and (min-width: 580px) and (max-width: 767px) {
        .header-background {
            background: url('../images/biriyani-mobile.jpg') center / cover;
@@ -146,29 +134,27 @@ vertical-align: middle;
        .hero_title {
            padding-left: 0px;
        }
-
-         .text_margin{
-          margin-top: 25%;
-        }
-        .learn_title {
-          width: 100%;
-          font-size: 40px;
-          padding-bottom: 50px;
-          font-family: 'Gabriela', serif;
-          display: inline-block;
-          text-align: center;
-        }
-
-         .learn_intro {
-            font-size: 20px;
-            font-family: Source Sans Pro;
-            width: 90%;
-            text-align: justify;
-            line-height: 40px;
-        }
+       .text_margin {
+           margin-top: 25%;
+       }
+       .learn_title {
+           width: 100%;
+           font-size: 40px;
+           padding-bottom: 50px;
+           font-family: 'Gabriela', serif;
+           display: inline-block;
+           text-align: center;
+       }
+       .learn_intro {
+           font-size: 20px;
+           font-family: Source Sans Pro;
+           width: 90%;
+           text-align: justify;
+           line-height: 40px;
+       }
    }
+
    /* Mobile */
-   
    @media only screen and (min-width: 381px) and (max-width: 579px) {
        .header-background {
            background: url('../images/biriyani-mobile.jpg') center / cover;
@@ -186,8 +172,6 @@ vertical-align: middle;
            text-align: center;
            line-height: 40px;
        }
-
-
        .styleTagline {
            font-size: 15px;
            font-style: italic;
@@ -198,30 +182,27 @@ vertical-align: middle;
        .hero_title {
            padding-left: 0px;
        }
-
-         .text_margin{
-          margin-top: 25%;
-        }
-
-         .learn_title {
-          width: 90%;
-          font-size: 40px;
-          padding-bottom: 50px;
-          font-family: 'Gabriela', serif;
-          display: inline-block;
-          text-align: center;
-        }
-
-         .learn_intro {
-            font-size: 20px;
-            font-family: Source Sans Pro;
-            width: 90%;
-            text-align: justify;
-            line-height: 40px;
-        }
+       .text_margin {
+           margin-top: 25%;
+       }
+       .learn_title {
+           width: 90%;
+           font-size: 40px;
+           padding-bottom: 50px;
+           font-family: 'Gabriela', serif;
+           display: inline-block;
+           text-align: center;
+       }
+       .learn_intro {
+           font-size: 20px;
+           font-family: Source Sans Pro;
+           width: 90%;
+           text-align: justify;
+           line-height: 40px;
+       }
    }
+
    /* Small Mobile Screens */
-   
    @media only screen and (min-width: 280px) and (max-width: 380px) {
        .header-background {
            background: url('../images/biriyani-mobile.jpg') center / cover;
@@ -249,26 +230,22 @@ vertical-align: middle;
        .hero_title {
            padding-left: 0px;
        }
-
-         .text_margin{
-          margin-top: 25%;
-        }
-
-
-        .learn_title {
-          width: 90%;
-          font-size: 35px;
-          padding-bottom: 50px;
-          font-family: 'Gabriela', serif;
-          display: inline-block;
-          text-align: center;
-        }
-
-           .learn_intro {
-            font-size: 20px;
-            font-family: Source Sans Pro;
-            width: 90%;
-            text-align: justify;
-            line-height: 40px;
-        }
+       .text_margin {
+           margin-top: 25%;
+       }
+       .learn_title {
+           width: 90%;
+           font-size: 35px;
+           padding-bottom: 50px;
+           font-family: 'Gabriela', serif;
+           display: inline-block;
+           text-align: center;
+       }
+       .learn_intro {
+           font-size: 20px;
+           font-family: Source Sans Pro;
+           width: 90%;
+           text-align: justify;
+           line-height: 40px;
+       }
    }

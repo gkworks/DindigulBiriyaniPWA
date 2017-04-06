@@ -1,8 +1,5 @@
 $(document).ready(function() {
     $("#locationSelect").selectmenu();
-
-    $( "#menuOnline button" ).button();
-
     $('#locationSelect').on('selectmenuchange', function() {
         var selectedValue = $(this).val();
         if (selectedValue) {
@@ -11,7 +8,7 @@ $(document).ready(function() {
                     return response.json();
                 })
                 .then(function(body) {
-                    var location = "<p>" + body.doorNumber + ", " + body.streetName + ", " + "<br>" + body.area + ", " + "<br>" + body.district + "</p><div><p>Phone: " + body.phone + "<br>Mobile:" + body.mobile + "</p></div>";
+                    var location = "<p>" + body.doorNumber + ", " + body.streetName + ", " + "<br>" + body.area + ", " + "<br>" + body.district + "</p><p>Phone: " + body.phone + "<br>Mobile:" + body.mobile + "</p>";
                     $("#locationDetails").html(location);
                 })
                 .catch(function(error) {
