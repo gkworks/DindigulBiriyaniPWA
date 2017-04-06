@@ -7,8 +7,14 @@
   // Turn on debug logging, visible in the Developer Tools' console.
   global.toolbox.options.debug = false;
 
-  // We want to precache the following items
-  toolbox.precache([ './index.html']);
+  // We want to precache the following items. 
+  //contact details are precached to provide offline experience all the time for contact.
+  toolbox.precache([ './index.html',
+                     './data/contact-cbe.json',
+                     './data/contact-che.json',
+                     './data/contact-dgl.json',
+                     './data/contact-mdu.json'
+                     ]);
 
   toolbox.router.get('/(.*)', global.toolbox.cacheFirst, {
     cache: {
@@ -17,7 +23,7 @@
       maxAgeSeconds: 604800
     },
     origin: /\.gstatic\.com$/,
-    // Set a timeout threshold of 2 seconds
+    // Set a timeout threshold of 4 seconds
     networkTimeoutSeconds: 4
   });
 
@@ -27,7 +33,7 @@
       maxEntries: 10,
       maxAgeSeconds: 604800
     },
-    // Set a timeout threshold of 2 seconds
+    // Set a timeout threshold of 4 seconds
     networkTimeoutSeconds: 4
   });
 
@@ -37,7 +43,7 @@
       maxEntries: 300,
       maxAgeSeconds: 604800
     },
-    // Set a timeout threshold of 2 seconds
+    // Set a timeout threshold of 10 seconds
     networkTimeoutSeconds: 10
   });
 
@@ -47,7 +53,7 @@
       maxEntries: 10,
       maxAgeSeconds: 604800
     },
-    // Set a timeout threshold of 2 seconds
+    // Set a timeout threshold of 10 seconds
     networkTimeoutSeconds: 10
   });
 
@@ -57,7 +63,7 @@
       maxEntries: 200,
       maxAgeSeconds: 604800
     },
-    // Set a timeout threshold of 2 seconds
+    // Set a timeout threshold of 4 seconds
     networkTimeoutSeconds: 4
   });
 
