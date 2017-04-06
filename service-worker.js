@@ -13,6 +13,8 @@
                       './css/site.css',
                       './css/material.min.css',
                       './js/material.min.js',
+                      './bower_components/jquery/dist/jquery.min.js',
+                      './js/site.js',
                       './images/biriyani.jpg']);
 
   // Ensure that our service worker takes control of the page as soon as possible.
