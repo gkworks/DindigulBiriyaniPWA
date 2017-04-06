@@ -15,7 +15,7 @@
        display: block;
    }
    .learn_title {
-       font-size: 40px;
+       font-size: 30px;
        padding-top: 60px;
        padding-bottom: 60px;
        font-family: 'Gabriela', serif;
@@ -101,7 +101,7 @@
            width: 100%;
        }
        .learn_intro {
-           font-size: 20px;
+           font-size: 15px;
            font-family: Source Sans Pro;
            width: 90%;
            text-align: justify;
@@ -139,14 +139,14 @@
        }
        .learn_title {
            width: 100%;
-           font-size: 40px;
+           font-size: 30px;
            padding-bottom: 50px;
            font-family: 'Gabriela', serif;
            display: inline-block;
            text-align: center;
        }
        .learn_intro {
-           font-size: 20px;
+           font-size: 15px;
            font-family: Source Sans Pro;
            width: 90%;
            text-align: justify;
@@ -187,14 +187,14 @@
        }
        .learn_title {
            width: 90%;
-           font-size: 40px;
+           font-size: 30px;
            padding-bottom: 50px;
            font-family: 'Gabriela', serif;
            display: inline-block;
            text-align: center;
        }
        .learn_intro {
-           font-size: 20px;
+           font-size: 15px;
            font-family: Source Sans Pro;
            width: 90%;
            text-align: justify;
@@ -235,14 +235,14 @@
        }
        .learn_title {
            width: 90%;
-           font-size: 35px;
+           font-size: 30px;
            padding-bottom: 50px;
            font-family: 'Gabriela', serif;
            display: inline-block;
            text-align: center;
        }
        .learn_intro {
-           font-size: 20px;
+           font-size: 15px;
            font-family: Source Sans Pro;
            width: 90%;
            text-align: justify;
