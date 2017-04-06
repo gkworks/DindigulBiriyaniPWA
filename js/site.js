@@ -9,6 +9,15 @@ function locationChange() {
              $("#locationDetails").html(location);
         });
     $("#location").show();
+     fetch('./data/menu.json')
+        .then(function(response) {
+            return response.json();
+        })
+        .then(function(body) {
+          $("#menuOffline").hide();
+          $("#menuOnline").show();
+        });
+    $("#menu").show();
 }
 
 function init() {
