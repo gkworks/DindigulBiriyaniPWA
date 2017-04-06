@@ -2,6 +2,31 @@
        background: url('../images/biriyani.jpg') center / cover;
        height: 400px;
    }
+
+   .mainContent {
+       background: #C81932;
+       color: white
+   }
+
+    .learn_title{
+      font-size: 40px;
+      padding-top:60px;
+      padding-bottom: 60px;
+      font-family: 'Gabriela', serif;
+      display: inline-block;
+      text-align: center;
+      width: 100%;
+    }
+
+     .learn_intro{
+      font-size: 20px;
+      width: 90%;
+      text-align: justify;
+      line-height: 40px;
+      font-family: Source Sans Pro;
+      padding-bottom: 60px;
+    }
+
    .demo-layout-transparent .mdl-layout__header {
        color: white;
    }
@@ -47,6 +72,18 @@
        .mdl-mega-footer {
            margin-top: 50px;
        }
+
+         .learn_title {
+        width: 100%;
+      }
+
+         .learn_intro {
+          font-size: 20px;
+          font-family: Source Sans Pro;
+          width: 90%;
+          text-align: justify;
+          line-height: 40px;
+      }
    }
    /* Phablets */
    
@@ -77,6 +114,22 @@
 
          .text_margin{
           margin-top: 25%;
+        }
+        .learn_title {
+          width: 100%;
+          font-size: 40px;
+          padding-bottom: 50px;
+          font-family: 'Gabriela', serif;
+          display: inline-block;
+          text-align: center;
+        }
+
+         .learn_intro {
+            font-size: 20px;
+            font-family: Source Sans Pro;
+            width: 90%;
+            text-align: justify;
+            line-height: 40px;
         }
    }
    /* Mobile */
@@ -114,6 +167,23 @@
          .text_margin{
           margin-top: 25%;
         }
+
+         .learn_title {
+          width: 90%;
+          font-size: 40px;
+          padding-bottom: 50px;
+          font-family: 'Gabriela', serif;
+          display: inline-block;
+          text-align: center;
+        }
+
+         .learn_intro {
+            font-size: 20px;
+            font-family: Source Sans Pro;
+            width: 90%;
+            text-align: justify;
+            line-height: 40px;
+        }
    }
    /* Small Mobile Screens */
    
@@ -133,7 +203,6 @@
            width: 90%;
            text-align: center;
            line-height: 40px;
-           padding-left: 50px;
        }
        .styleTagline {
            font-size: 15px;
@@ -148,5 +217,23 @@
 
          .text_margin{
           margin-top: 25%;
+        }
+
+
+        .learn_title {
+          width: 90%;
+          font-size: 35px;
+          padding-bottom: 50px;
+          font-family: 'Gabriela', serif;
+          display: inline-block;
+          text-align: center;
+        }
+
+           .learn_intro {
+            font-size: 20px;
+            font-family: Source Sans Pro;
+            width: 90%;
+            text-align: justify;
+            line-height: 40px;
         }
    }
