@@ -9,7 +9,7 @@ function locationChange() {
              $("#locationDetails").html(location);
         });
     $("#location").show();
-     fetch('./data/menu.json')
+     fetch('./dynamicdata/menu.json')
         .then(function(response) {
             return response.json();
         })

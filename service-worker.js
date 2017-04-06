@@ -8,18 +8,58 @@
   global.toolbox.options.debug = false;
 
   // We want to precache the following items
-  toolbox.precache([ './',
-                      './index.html',
-                      './css/site.css',
-                      './css/material.min.css',
-                      './js/material.min.js',
-                      './bower_components/jquery/dist/jquery.min.js',
-                      './js/site.js',
-                      './images/biriyani.jpg',
-                      './data/contact-cbe.json',
-                      './data/contact-che.json',
-                      './data/contact-dgl.json',
-                      './data/contact-mdu.json']);
+  toolbox.precache([ './index.html']);
+
+  toolbox.router.get('/(.*)', global.toolbox.cacheFirst, {
+    cache: {
+      name: 'fonts',
+      maxEntries: 30,
+      maxAgeSeconds: 604800
+    },
+    origin: /\.gstatic\.com$/,
+    // Set a timeout threshold of 2 seconds
+    networkTimeoutSeconds: 4
+  });
+
+  toolbox.router.get('/DindigulBiriyaniPWA/css/(.*)', global.toolbox.cacheFirst, {
+    cache: {
+      name: 'biriyani-stylesheets',
+      maxEntries: 10,
+      maxAgeSeconds: 604800
+    },
+    // Set a timeout threshold of 2 seconds
+    networkTimeoutSeconds: 4
+  });
+
+  toolbox.router.get('/DindigulBiriyaniPWA/images/(.*)', global.toolbox.cacheFirst, {
+    cache: {
+      name: 'biriyani-images',
+      maxEntries: 300,
+      maxAgeSeconds: 604800
+    },
+    // Set a timeout threshold of 2 seconds
+    networkTimeoutSeconds: 4
+  });
+
+  toolbox.router.get('/DindigulBiriyaniPWA/js/(.*)', global.toolbox.cacheFirst, {
+    cache: {
+      name: 'biriyani-javascript',
+      maxEntries: 10,
+      maxAgeSeconds: 604800
+    },
+    // Set a timeout threshold of 2 seconds
+    networkTimeoutSeconds: 4
+  });
+
+  toolbox.router.get('/DindigulBiriyaniPWA/data/(.*)', global.toolbox.cacheFirst, {
+    cache: {
+      name: 'biriyani-data',
+      maxEntries: 200,
+      maxAgeSeconds: 604800
+    },
+    // Set a timeout threshold of 2 seconds
+    networkTimeoutSeconds: 4
+  });
 
   // Ensure that our service worker takes control of the page as soon as possible.
   global.addEventListener('install', event => event.waitUntil(global.skipWaiting()));
