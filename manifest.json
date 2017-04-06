@@ -1,6 +1,6 @@
 {
   "name": "Dindigul Biriyani",
-  "short_name": "Dindigul Biriyani",
+  "short_name": "DB",
   "lang": "en-US",
   "start_url": "./index.html",
   "display": "standalone",
@@ -8,25 +8,25 @@
   "background_color": "#C81932",
   "icons": [
     {
-      "src": "./images/beer-icon-192.png",
+      "src": "./images/db-icon-192.png",
       "sizes": "192x192",
       "type": "image/png",
       "density": 1
     },
     {
-      "src": "./images/beer-icon-144.png",
+      "src": "./images/db-icon-144.png",
       "sizes": "144x144",
       "type": "image/png",
       "density": "1"
     },
     {
-      "src": "./images/beer-icon-240.png",
+      "src": "./images/db-icon-240.png",
       "sizes": "240x240",
       "type": "image/png",
       "density": "1"
     },
     {
-      "src": "./images/beer-icon-96.png",
+      "src": "./images/db-icon-96.png",
       "sizes": "96x96",
       "type": "image/png",
       "density": "1"

@@ -15,7 +15,6 @@
                       './js/material.min.js',
                       './bower_components/jquery/dist/jquery.min.js',
                       './js/site.js',
-                       './js/fetch.js',
                       './images/biriyani.jpg',
                       './data/contact-cbe.json',
                       './data/contact-che.json',
