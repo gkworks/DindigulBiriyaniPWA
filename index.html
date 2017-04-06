@@ -51,9 +51,7 @@
          <main class="mdl-layout__content mainContent">
             <div id="location" style="display:none">
                <div class="mdl-grid learn_title">Contact Us</div>
-                <div class="mdl-grid about_text">
-                  xyz
-                </div> 
+                <div id="locationDetails" class="mdl-grid about_text"></div> 
             </div>
             <div class="mdl-grid learn_title ">Served With Love</div>
             <div class="mdl-grid learn_intro">For those with pure food indulgence in mind, come next door and sate your desires with our ever changing internationally and seasonally inspired small plates. We love food, lots of different food, just like you.</div>
@@ -67,6 +65,7 @@
          <button class="mdl-snackbar__action" type="button"></button>
       </div>
       <script defer src="./js/material.min.js"></script>
+      <script defer src="./js/fetch.js"></script>
       <script>
          // Register the service worker
          if ('serviceWorker' in navigator) {

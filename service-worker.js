@@ -15,7 +15,12 @@
                       './js/material.min.js',
                       './bower_components/jquery/dist/jquery.min.js',
                       './js/site.js',
-                      './images/biriyani.jpg']);
+                       './js/fetch.js',
+                      './images/biriyani.jpg',
+                      './data/contact-cbe.json',
+                      './data/contact-che.json',
+                      './data/contact-dgl.json',
+                      './data/contact-mdu.json']);
 
   // Ensure that our service worker takes control of the page as soon as possible.
   global.addEventListener('install', event => event.waitUntil(global.skipWaiting()));
