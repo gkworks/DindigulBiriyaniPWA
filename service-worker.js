@@ -38,7 +38,7 @@
       maxAgeSeconds: 604800
     },
     // Set a timeout threshold of 2 seconds
-    networkTimeoutSeconds: 4
+    networkTimeoutSeconds: 10
   });
 
   toolbox.router.get('/DindigulBiriyaniPWA/js/(.*)', global.toolbox.cacheFirst, {
@@ -48,7 +48,7 @@
       maxAgeSeconds: 604800
     },
     // Set a timeout threshold of 2 seconds
-    networkTimeoutSeconds: 4
+    networkTimeoutSeconds: 10
   });
 
   toolbox.router.get('/DindigulBiriyaniPWA/data/(.*)', global.toolbox.cacheFirst, {
