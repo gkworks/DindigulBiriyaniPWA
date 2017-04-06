@@ -6,7 +6,7 @@ function locationChange() {
                 return response.json();
             })
             .then(function(body) {
-                var location = "<p>" + body.doorNumber + ", " + body.streetName + ", " + "<br>" + body.area + ", " + "<br>" + body.district + "</p>";
+                var location = "<p>" + body.doorNumber + ", " + body.streetName + ", " + "<br>" + body.area + ", " + "<br>" + body.district + "</p><div><p>Phone: "+body.phone+"<br>Mobile:"+body.mobile+"</p></div>";
                 $("#locationDetails").html(location);
             })
             .catch(function(error) {
