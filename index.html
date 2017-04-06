@@ -5,10 +5,12 @@
     <meta charset="UTF-8">
     <title>Biriyani Shop</title>
     <script src="./js/jquery.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
     <script src="./js/site.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link href='https://fonts.googleapis.com/css?family=Gabriela|Open+Sans' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="./css/material.min.css">
+    <link rel="stylesheet" href="./css/jquery-ui.css">
     <link rel="stylesheet" href="./css/site.css">
     <!-- /build -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -39,8 +41,8 @@
             <div id="tagline" class="mdl-layout__header-row text_margin hero_title">
                 <div class="mdl-grid styleTagline">World's favourite Biriyani destination</div>
             </div>
-            <div>
-                <select id="locationSelect" class="" onchange="locationChange()">
+            <div class="locationSelect">
+                <select id="locationSelect">
                     <option value="" selected>Select your location</option>
                     <option value="che">Chennai</option>
                     <option value="cbe">Coimbatore</option>
@@ -51,30 +53,32 @@
         </header>
         <!-- main div -->
         <main class="mdl-layout__content mainContent">
-            <div id="menu" style="display:none">
-                <div class="mdl-grid learn_title">Menu</div>
-                <div id="menuOnline" style="display:none">
-                    <div id="menuDetails" class="mdl-grid about_text">
-                        <ul>
-                            <li>Soup</li>
-                            <li>Starters</li>
-                            <li>Biriyani</li>
-                            <li>North Indian</li>
-                            <li>Dessert</li>
-                        </ul>
+            <div class="locationArea">
+                <div id="menu" style="display:none">
+                    <div class="mdl-grid learn_title">Menu</div>
+                    <div id="menuOnline" style="display:none">
+                        <div id="menuDetails" class="mdl-grid about_text">
+                            <ul>
+                                <li>Soup</li>
+                                <li>Starters</li>
+                                <li>Biriyani</li>
+                                <li>North Indian</li>
+                                <li>Dessert</li>
+                            </ul>
+                        </div>
+                        <button style="background-color:#C81932; color:white">Order Online</button>
                     </div>
-                    <button class="mdl-button">Order Online</button>
+                    <div id="menuOffline">
+                        Sorry, we are not able to show you details right now! Please call and make your order!!
+                    </div>
                 </div>
-                <div id="menuOffline">
-                    Sorry, we are not able to show you details right now! Please call and make your order!!
+                <div id="location" style="display:none">
+                    <div class="mdl-grid learn_title">Contact Us</div>
+                    <div id="locationDetails" class="mdl-grid about_text"></div>
                 </div>
-            </div>
-            <div id="location" style="display:none">
-                <div class="mdl-grid learn_title">Contact Us</div>
-                <div id="locationDetails" class="mdl-grid about_text"></div>
             </div>
             <div class="mdl-grid learn_title ">Served With Love</div>
-            <div class="mdl-grid learn_intro">For those with pure food indulgence in mind, come next door and sate your desires with our ever changing internationally and seasonally inspired small plates. We love food, lots of different food, just like you.</div>
+            <div class="mdl-grid learn_intro">No matter how you slice and dice it, food and love are inextricably tied. We promise you to deliver your food with love and make the experience memorable.</div>
         </main>
         <!-- footer -->
         <footer class="mdl-mega-footer"></footer>

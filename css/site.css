@@ -4,9 +4,14 @@
    }
 
    .mainContent {
-       background: #C81932;
-       color: white
+       background: white;
    }
+
+   ul {
+    width: 70%;
+    margin: auto;
+    list-style-type: none;
+}
 
     .learn_title{
       font-size: 40px;
@@ -41,11 +46,41 @@
        font-size: 25px;
        font-style: italic;
    }
+
+   .locationSelect {
+       margin-top: 15%;
+    
+    margin: auto;
+    text-align:centre;
+   }
+
+     .locationArea >div{
+         text-align: center;
+vertical-align: middle;
+       }
+
+
+
    /* Desktop */
    
    @media only screen and (min-width: 1025px) {
        .hide_desktop {
            display: none!important;
+       }
+
+       .locationArea {
+           width: 100%;
+           display: inline-block;
+       }
+
+       #location {
+           width: 50%;
+           float: right;
+       }
+
+        #menu {
+           width: 50%;
+           float: left;
        }
    }
    /* Tablet */
